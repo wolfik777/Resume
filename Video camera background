@@ -1,0 +1,51 @@
+import cv2
+import numpy
+
+def get_frame(cap , sc_factor):
+
+    _, frame = cap.read(0)
+
+    frame = cv2.resize(frame , None , fx=sc_factor , fy=sc_factor , interpolation=cv2.INTER_AREA)
+
+    return frame
+
+if __name__ == "__main__":
+
+    cap = cv2.VideoCapture(0)
+    bg_substract = cv2.createBackgroundSubtractorMOG2()
+    history = 100
+    learning_rate = 1.0 / history
+
+    a = input("Enter mode \n 1. backround \n 2. inversion  \n 3. Int \n Your : ")
+
+    while True:
+
+        frame = get_frame(cap , 0.5)
+
+        mask = bg_substract.apply(frame , learningRate=learning_rate)
+
+        mask = cv2.cvtColor(mask , cv2.COLOR_GRAY2BGR)
+
+        cv2.imshow("Input" , frame)
+
+        if a == "1":
+
+            cv2.imshow("Output" , mask & frame)
+
+        elif a == "2":
+
+            cv2.imshow("Output" , mask - frame)
+
+        elif a == "3":
+
+             cv2.imshow("Output" , (mask) * 0.5 * (frame))
+
+        c = cv2.waitKey(10)
+
+        if c == 27:
+
+            break
+
+            cap.release()
+
+            cv2.destroyAllWindows()
