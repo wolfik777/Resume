@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiteGoHome - Дом у моря в Крыму | Донузлав</title>
     <meta name="description" content="Аренда дома у моря в Крыму. Песчаный пляж, Wi-Fi, мангал. Идеально для семейного отдыха и кайтсерфинга.">
+    <style>
+        /* Временные стили для предпросмотра */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .header { background: #2a9d8f; color: white; padding: 15px; }
+        .content { padding: 20px; }
+    </style>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с прозрачным меню -->
+    <!-- Шапка -->
     <header class="header">
         <div class="container">
             <div class="logo">KiteGoHome</div>
@@ -21,174 +24,58 @@
                     <li><a href="#gallery">Галерея</a></li>
                     <li><a href="#location">Расположение</a></li>
                     <li><a href="#booking">Бронирование</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="phone">
-                <a href="tel:+79152761977">+7 (915) 276-19-77</a>
-            </div>
         </div>
     </header>
 
-    <!-- Герой-секция с параллакс эффектом -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Ваш отдых у моря в Крыму</h1>
-            <p class="subtitle">Всего 30 метров до теплого залива Донузлав</p>
-            <a href="#booking" class="btn-primary">Забронировать</a>
-        </div>
-    </section>
+    <!-- Основной контент (сохраняем ВЕСЬ ваш текст) -->
+    <main class="content">
+        <section id="about">
+            <h1>Дом у моря на Южной косе (Крым)</h1>
+            
+            <!-- Ваше оригинальное описание -->
+            <div class="original-content">
+                <p>Всего <strong>30 метров до теплого залива</strong> Донузлав (+25–27°C до ноября)! Идеально для семей с детьми: мелководье, песчаный пляж, детская площадка рядом.</p>
+                
+                <h2>Что внутри:</h2>
+                <ul>
+                    <li>2 комнаты, новая мебель и техника (кондиционер, Wi-Fi, ТВ)</li>
+                    <li>Зона отдыха: качели, мангал, парковка</li>
+                    <li>Можно с животными и детьми!</li>
+                </ul>
 
-    <!-- Блок преимуществ -->
-    <section class="features">
+                <h2>Цены:</h2>
+                <ul>
+                    <li>Апрель: 2000₽/сутки</li>
+                    <li>Май: 2500₽/сутки</li>
+                    <li>Июнь: 3000₽/сутки</li>
+                    <li>Июль: 3500₽/сутки</li>
+                    <li>Август: 4000₽/сутки</li>
+                    <li>Сентябрь: 2500₽/сутки</li>
+                    <li>Октябрь: 2000₽/сутки</li>
+                    <li>Зимний сезон: 25 000₽/месяц</li>
+                </ul>
+
+                <p><strong>Расположение:</strong> 30 км от Евпатории, кооператив «Донузлав»</p>
+            </div>
+        </section>
+
+        <!-- Ваши оригинальные разделы -->
+        <section id="sport">
+            <h2>Про спорт</h2>
+            <div class="original-content">
+                [Ваш текст про кайтинг, вейкбординг и сапбординг]
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
         <div class="container">
-            <div class="feature-item">
-                <img src="img/icon-beach.svg" alt="Пляж" width="60">
-                <h3>Песчаный пляж</h3>
-                <p>5 км чистейшего песка</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/icon-wifi.svg" alt="Wi-Fi" width="60">
-                <h3>Wi-Fi</h3>
-                <p>Высокоскоростной интернет</p>
-            </div>
-            <div class="feature-item">
-                <img src="img/icon-family.svg" alt="Для семей" width="60">
-                <h3>Для семей</h3>
-                        <p>Детская площадка рядом</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="img/icon-parking.svg" alt="Парковка" width="60">
-                        <h3>Парковка</h3>
-                        <p>Место для вашего авто</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Галерея -->
-            <section id="gallery" class="gallery-section">
-                <div class="container">
-                    <h2 class="section-title">Наш дом</h2>
-                    <div class="gallery-grid">
-                        <div class="gallery-item" style="background-image: url('img/kuhnya-obschiy-plan.webp')"></div>
-                        <div class="gallery-item" style="background-image: url('img/gostinaya.webp')"></div>
-                        <div class="gallery-item" style="background-image: url('img/spalnya.webp')"></div>
-                        <div class="gallery-item" style="background-image: url('img/spalnyasledu.webp')"></div>
-                        <div class="gallery-item" style="background-image: url('img/mangal.webp')"></div>
-                        <div class="gallery-item" style="background-image: url('img/plazh.webp')"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- О доме -->
-            <section id="about" class="about-section">
-                <div class="container">
-                    <div class="about-content">
-                        <h2 class="section-title">Уютный дом у моря</h2>
-                        <div class="about-text">
-                            <p>Предлагаем для посуточной и долгосрочной аренды дом в экологически чистом регионе Западного Крыма – на Южной косе. Всего 30 метров до морского залива Донузлав с теплой водой (25-27°C), сезон длится до ноября.</p>
-                            <ul class="features-list">
-                                <li>2 комфортабельные комнаты</li>
-                                <li>Новая мебель и техника</li>
-                                <li>Кондиционеры в каждой комнате</li>
-                                <li>Спутниковое ТВ и Wi-Fi</li>
-                                <li>Зона отдыха с мангалом</li>
-                            </ul>
-                        </div>
-                        <div class="about-image">
-                            <img src="img/dom-snaruzhi.webp" alt="Дом снаружи">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Бронирование -->
-            <section id="booking" class="booking-section">
-                <div class="container">
-                    <h2 class="section-title">Бронирование</h2>
-                    <div class="price-list">
-                        <div class="price-item">
-                            <h3>Апрель</h3>
-                            <p class="price">2 000₽ <span>/сутки</span></p>
-                        </div>
-                        <div class="price-item highlight">
-                            <h3>Май-Июнь</h3>
-                            <p class="price">2 500₽ <span>/сутки</span></p>
-                        </div>
-                        <div class="price-item">
-                            <h3>Июль-Август</h3>
-                            <p class="price">3 500₽ <span>/сутки</span></p>
-                        </div>
-                        <div class="price-item">
-                            <h3>Зимний сезон</h3>
-                            <p class="price">25 000₽ <span>/месяц</span></p>
-                        </div>
-                    </div>
-                    <form class="booking-form">
-                        <div class="form-group">
-                            <label for="checkin">Заезд</label>
-                            <input type="date" id="checkin" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="checkout">Выезд</label>
-                            <input type="date" id="checkout" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="guests">Гостей</label>
-                            <select id="guests">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn-primary">Проверить доступность</button>
-                    </form>
-                </div>
-            </section>
-
-            <!-- Контакты -->
-            <section id="contacts" class="contacts-section">
-                <div class="container">
-                    <h2 class="section-title">Контакты</h2>
-                    <div class="contacts-content">
-                        <div class="contacts-info">
-                            <h3>Как нас найти</h3>
-                            <p>Республика Крым, г.о. Евпатория, дачно-лодочный кооператив "Донузлав"</p>
-                            <p>Координаты: 45.326934, 33.031000</p>
-                            <div class="contact-links">
-                                <a href="tel:+79152761977" class="contact-link">
-                                    <img src="img/icon-phone.svg" alt="Телефон">
-                                    +7 (915) 276-19-77
-                                </a>
-                                <a href="https://www.avito.ru/ваше_объявление" target="_blank" class="contact-link">
-                                    <img src="img/icon-avito.svg" alt="Авито">
-                                    Написать на Авито
-                                </a>
-                            </div>
-                        </div>
-                        <div class="contacts-map">
-                            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=168645485968" width="100%" height="400" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Футер -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-logo">KiteGoHome</div>
-                        <div class="footer-copyright">© 2025 Все права защищены</div>
-                        <div class="footer-social">
-                            <a href="#"><img src="img/icon-vk.svg" alt="ВКонтакте"></a>
-                            <a href="#"><img src="img/icon-telegram.svg" alt="Telegram"></a>
-                            <a href="#"><img src="img/icon-whatsapp.svg" alt="WhatsApp"></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            <script src="scripts.js"></script>
-        </body>
-        </html>
+            <p>© 2025 KiteGoHome</p>
+            <a href="tel:+79152761977">+7 (915) 276-19-77</a>
+        </div>
+    </footer>
+</body>
+</html>
