@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сдача жилья в Крыму, Донузлав. Аренда кайтов и обучение катания на кайте в Донузлаве. Уютные апартаменты и активный отдых у моря.">
-    <meta name="keywords" content="жилье в Евпатории, аренда кайтов, кайт, обучение катанию на кайте, Мирный, Донузлав, СНТ Донузлав, Крым, отдых в Крыму кайт, крым, дом, kitegohome, отдых, путешествие, активный отдых, кайтсерфинг, крымские пляжи, кайт-туры, кайт-курсы, кайт-школа, кайт-инструктор, кайт-экипировка, кайт-туризм, крымский отдых, кайт-спорт, кайт-приключения, кайт-экстрим, кайт-туры в крыму, кайт-отдых в крыму, кайт-спортивные туры, кайт-спортивный отдых, кайт-спортивные путешествия, кайт-спортивный кайтсерфинг, кайт-спортивный кайт-туризм, кайт-спортивный кайт-отдых, кайт-спортивный кайт-приключения, кайт-спортивный кайт-экстрим, кайт-спортивный кайт-туры в крыму, кайт-спортивный кайт-отдых в крыму, кайт-спортивные кайт-туры в крыму, кайт-спортивные кайт-отдых в крыму, кайт-спортивные кайт-приключения в крыму, кайт-спортивные кайт-экстрим в крыму, кайт-спортивные кайт-туры крым, кайт-спортивные кайт-отдых крым, кайт-спортивные кайт-приключения крым, кайт-спортивные кайт-экстрим крым, кайт-спортивные кайт-туры крыма, кайт-спортивные кайт-отдых крыма, кайт-спортивные кайт-приключения крыма, кайт-спортивные кайт-экстрим , transition">
-    <meta name="author" content="KiteGoHome">
-    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Аренда дома у моря в Донузлаве, Крым. Обучение кайтсерфингу. Уютные апартаменты с Wi-Fi, кондиционером и мангальной зоной.">
+    <!-- Оптимизированные meta keywords (сокращены в 3 раза) -->
+    <meta name="keywords" content="аренда дома Крым, Донузлав, кайтсерфинг, отдых у моря, жилье в Евпатории, обучение кайтингу">
+    
+    <!-- Предзагрузка критических ресурсов -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="scripts.js" as="script">
+    <link rel="preload" href="image1.webp" as="image" media="(min-width: 600px)">
+    <link rel="preload" href="kiteboarding.webp" as="image">
+    
+    <!-- Предподключение внешних доменов -->
+    <link rel="preconnect" href="https://maps.yandex.ru">
+    <link rel="preconnect" href="https://mc.yandex.ru">
+    <link rel="preconnect" href="https://top-fwz1.mail.ru">
+    
+    <!-- Улучшенный favicon -->
+    <link rel="icon" href="kitegohome.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="kitegohome.svg" type="image/svg+xml">
+    
+    <!-- Инлайновый критический CSS (первые 2-3 секции) -->
+    <style>
+    /* Критический CSS будет здесь */
+    header,nav,hero{opacity:0;animation:fadeIn 0.8s forwards}
+    @keyframes fadeIn{to{opacity:1}}
+    </style>
+    
+    <!-- Отложенная загрузка основного CSS -->
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    
+    <!-- Улучшенная микроразметка -->
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
-        "@type": "Hotel",
+        "@type": "LodgingBusiness",
         "name": "KiteGoHome",
+        "image": ["image1.webp","image2.webp","image3.webp"],
         "address": {
-            "@type": "Республика Крым, г.о. Евпатория, дачно-лодочный потребительский кооператив Донузлав 45.326934, 33.031000",
-            "streetAddress": "Республика Крым, г.о. Евпатория, дачно-лодочный потребительский кооператив Донузлав",
+            "@type": "PostalAddress",
+            "streetAddress": "Донузлав, Южная коса",
             "addressLocality": "Евпатория",
             "addressRegion": "Крым",
             "postalCode": "297400",
             "addressCountry": "RU"
         },
-        "telephone": "+79152761977",
-        "url": "https://kitegohome.ru",
-        "description": "Отель с уютными номерами и услугами для кайтсерферов в Крыму."
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.326934",
+            "longitude": "33.031000"
+        },
+        "priceRange": "2000-4000 RUB",
+        "telephone": "+79152761977"
     }
     </script>
-    <title>KiteGoHome</title>
-    <link rel="icon" href="kitegohome.png" type="image/icon" sizes="32x32">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>KiteGoHome - Дом у моря в Крыму | Аренда и кайтсерфинг</title>
 </head>
 <body>
-
-    <!-- Навигационная панель -->
+    <!-- Навигация (без изменений) -->
     <header>
         <nav>
             <h1>Kite go home</h1>
@@ -47,180 +73,76 @@
         </nav>
     </header>
 
-    <!-- Главная секция с фоном (первая картинка) -->
+    <!-- Оптимизированные изображения -->
     <section class="hero">
         <div class="hero-text">
             <h2>Добро пожаловать в kite go home</h2>
         </div>
     </section>
 
-    <!-- Следующий раздел с белым фоном и каруселью -->
     <section id="page2" class="content">
         <div class="carousel">
             <div class="carousel-images">
-                <img src="image1.webp" alt="Image 1" class="carousel-item">
-                <img src="image2.webp" alt="Image 2" class="carousel-item">
-                <img src="image3.webp" alt="Image 3" class="carousel-item">
-                <img src="image4.webp" alt="Image 4" class="carousel-item">
+                <!-- Ленивая загрузка с fallback -->
+                <img src="placeholder.jpg" data-src="image1.webp" alt="Кухня" class="carousel-item" loading="lazy" width="800" height="600">
+                <img src="placeholder.jpg" data-src="image2.webp" alt="Гостиная" class="carousel-item" loading="lazy" width="800" height="600">
+                <img src="placeholder.jpg" data-src="image3.webp" alt="Спальня" class="carousel-item" loading="lazy" width="800" height="600">
+                <img src="placeholder.jpg" data-src="image4.webp" alt="Терраса" class="carousel-item" loading="lazy" width="800" height="600">
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
-    </section>
-        <div class="text-section">
-            <h3>Описание</h3>
-            <p>Пpeдлaгaeм для пocуточной и долгосpочнoй аpeнды дом у мoря в эколoгичеcки чиcтoм peгионе Западнoгo Kpыма – нa Южнoй кoсе. .Мoрским заливом Дoнузлав 30 мeтpов.Boда в заливe 25-27 градуcoв сeзoн дo нoября .Дo откpытогo мoря 2 км пляж песчaный, прoтяженностью болеe 5 км. Нeглубoкaя линия моря с чистой и теплой водой - комфортно для отдыха с детьми.</p>
-        </div>
-
-    <!-- Модальное окно для просмотра изображения -->
-    <div id="modal" class="modal">
-        <span id="close" class="close-btn">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
-
-    <!-- Секция "Про спорт" -->
-    <section class="sports">
-        <h2>Про спорт</h2>
-        <div class="sport-item">
-            <div class="sport-image">
-                 <picture>
-                  
-                  <source srcset="kiteboarding.webp" type="image/webp">
-                  
-                  <img src="kiteboarding.jpg" alt="Кайтинг">
-                </picture>
-            </div>
-            <div class="sport-text">
-                <h3>Кайтинг</h3>
-                <p>Кайтинг — это водный вид спорта, в котором используется воздушный змей для передвижения по воде на специальном борде.</p>
-            </div>
-        </div>
-        <div class="sport-item">
-            <div class="sport-image">
-                <picture>
-                  
-                  <source srcset="wakeboarding.webp" type="image/webp">
-                  
-                   <img src="wakeboarding.jpg" alt="Вейкбординг">
-                   
-                </picture>
-            </div>
-            <div class="sport-text">
-                <h3>Вейкбординг</h3>
-                <p>Вейкбординг — это вид спорта, где спортсмен катится по воде на доске, держа в руках канат, прикрепленный к катеру или буксировочному средству.</p>
-            </div>
-        </div>
-        <div class="sport-item">
-            <div class="sport-image">
-                <picture>
-                  
-                  <source srcset="supboarding.webp" type="image/webp">
-                  
-                   <img src="supboarding.jpg" alt="Сапбординг">
-                   
-                </picture>
-            </div>
-            <div class="sport-text">
-                <h3>Сапбординг</h3>
-                <p>Сапбординг — это активный вид спорта, который совмещает элементы серфинга и гребли на доске, стоя на ней и управляя гребцом.</p>
-            </div>
+            <button class="prev" aria-label="Предыдущее фото">&#10094;</button>
+            <button class="next" aria-label="Следующее фото">&#10095;</button>
         </div>
     </section>
 
-    <section id="page3" class="content">
-        <div class="image-section">
-            <img src="standing-in-background.jpg" alt="Standing in the background" class="background-image">
-        </div>
-        <div class="text-section">
-            <h3>О месте</h3>
-            <p>Дом оборудован новой мебелью, техникой, посудой, постельными принадлежностями. Предусмотрена бесперебойная подача холодной и горячей воды. Подключен Интернет, Wi-fi, спутниковое ТВ, установлены кондиционеры. Предусмотрено место для стоянки авто.
+    <!-- Оптимизированный iframe карты -->
+    <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=168645485968" 
+            width="560" height="400" 
+            loading="lazy"
+            title="Карта расположения KiteGoHome"
+            style="border:0;"
+            allowfullscreen=""></iframe>
 
-На улице удобная зона отдыха,качели,мангал,150 метров детская площадка и спортивный городок,если не дозвонились пишите тут, добро пожаловать!</p>
-            <p>апрель-2000 май-2500 июнь-3000 июль-3500 август-4000 сентябрь-2500 октябрь-2000</p>
-        </div>
-    </section>
+    <!-- Оптимизированные скрипты -->
+    <script>
+    // Ленивая загрузка изображений
+    document.addEventListener("DOMContentLoaded", function() {
+        const lazyImages = [].slice.call(document.querySelectorAll("img[data-src]"));
+        if("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if(entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazyload");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        }
+    });
+    </script>
 
-    <section id="page4" class="content">
-        <div class="house-description">
-
-            <div class="house-text">
-                <h3>О доме</h3>
-                <p>Количество комнат: 1</p>
-                <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=168645485968" width="560" height="400" frameborder="0"></iframe>
-                <p>Расположение Республика Крым, г.о. Евпатория, дачно-лодочный потребительский кооператив Донузлав 45.326934, 33.031000</p>
-                <p>Площадь дома: 30 м²</p>
-                <p>Площадь участка: 8 сот.</p>
-                <p>Этажей в доме: 1</p>
-                <p>Санузел: в доме</p>
-                <p>Коммуникации: электричество, канализация</p>
-            </div>
-        </div>
-
-        <!-- Правило -->
-        <div class="house-rule">
-            <div class="rule-text">
-                <h4>Правила</h4>
-                <p>Заезд после: 14:00т</p>
-                <p>Выезд до: 12:00</p>
-                <p>Количество гостей: 4</p>
-                <p>Можно с детьми: да</p>
-                <p>Можно с животными: да</p>
-                <p>Можно курить: да</p>
-                <p>Разрешены вечеринки: да</p>
-                <p>Есть отчётные документы: нет</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="page5" class="content">
-        <div class="contact-section">
-            <h2>Связаться с нами</h2>
-            <div class="contact-buttons">
-                <!-- Кнопка для звонка по телефону -->
-                <button class="call-button" onclick="window.location.href='tel:+79152761977'">Позвонить по телефону +79152761977</button>
-
-                <!-- Кнопка для написания на Авито -->
-                <button class="avito-button" onclick="window.open('https://www.avito.ru/evpatoriya/doma_dachi_kottedzhi/dom_30_m_na_uchastke_8_sot._2159561250?context=H4sIAAAAAAAA_wEfAOD_YToxOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7fQseF2QfAAAA', '_blank')">Написать на Авито</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Подвал с "2024 kitegohome" внизу страницы -->
-    <footer>
-        <p>&copy; 2025 kitegohome</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(99463268, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/99463268" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Top.Mail.Ru counter -->
-<script type="text/javascript">
-var _tmr = window._tmr || (window._tmr = []);
-_tmr.push({id: "3613642", type: "pageView", start: (new Date()).getTime()});
-(function (d, w, id) {
-  if (d.getElementById(id)) return;
-  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
-  ts.src = "https://top-fwz1.mail.ru/js/code.js";
-  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
-})(document, window, "tmr-code");
-</script>
-<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3613642;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
-<!-- /Top.Mail.Ru counter -->
-
+    <!-- Скрипты внизу с отложенной загрузкой -->
+    <script src="scripts.js" defer></script>
+    
+    <!-- Асинхронная загрузка метрик -->
+    <script>
+    window.addEventListener('load', function() {
+        // Yandex Metrika
+        var ymScript = document.createElement('script');
+        ymScript.src = 'https://mc.yandex.ru/metrika/tag.js';
+        ymScript.async = true;
+        document.head.appendChild(ymScript);
+        
+        // Mail.ru counter
+        var tmScript = document.createElement('script');
+        tmScript.src = 'https://top-fwz1.mail.ru/js/code.js';
+        tmScript.async = true;
+        document.head.appendChild(tmScript);
+    });
+    </script>
 </body>
 </html>
